@@ -9,70 +9,102 @@ block variables
 //- Phần khai báo body
 block body
 	//- Bạn viết code vào đây nhớ là phải mở đầu bằng section ở mỗi khối
-	section.home-slider
-		.owl-carousel.owl-theme
-			.item
-				img(src="./img/home_slider_1.jpg", alt="")
-				.title
-					.container
-						.row
-							.col-md-7
-								h2 Chúng tôi là FullStack Vietnam
-								p Lorem ipsum dolor, sit amet consectetur adipisicing elit. Deleniti incidunt ex, autem dignissimos illum aperiam pariatur in explicabo corporis delectus totam! 
-			.item
-				img(src="./img/home_slider_1.jpg", alt="")
-				.title
-					.container
-						.row
-							.col-md-7
-								h2 Chúng tôi là FullStack Vietnam
-								p Lorem ipsum dolor, sit amet consectetur adipisicing elit. Deleniti incidunt ex, autem dignissimos illum aperiam pariatur in explicabo corporis delectus totam! 
-			.item
-				img(src="./img/home_slider_1.jpg", alt="")
-				.title
-					.container
-						.row
-							.col-md-7
-								h2 Chúng tôi là FullStack Vietnam
-								p Lorem ipsum dolor, sit amet consectetur adipisicing elit. Deleniti incidunt ex, autem dignissimos illum aperiam pariatur in explicabo corporis delectus totam! 
-	section.home-news
+	section.product
 		.container
 			.row
-				.col-md-4.item
-					figure
-						.blockimg
-							img(src="./img/home_news_1.jpg", alt="", srcset="")
+				.col-6.text-left
+					.title
+						h2 COLLECTIONS
+				.col-6.text-right
+					.link
+						a(href="#") LATEST
+						a(href="#") POPULAR
+			.row.mt-5
+				.col-md-4.text-center
+					.item
+						figure
+							img.img-fluid(src="/img/proct_1.png", alt="")
 						figcaption
-							h3 
-								a(href="#") Chúng tôi là FullStack Vietnam
-							time 22/06/2018
-							p Lorem ipsum dolor, sit amet consectetur adipisicing elit. Deleniti incidunt ex, autem dignissimos illum aperiam pariatur in explicabo corporis delectus totam! 
-				.col-md-4.item
-					figure
-						.blockimg
-							img(src="./img/home_news_2.jpg", alt="", srcset="")
+							h3 ADRIATICA ADR
+							span Luxury
+				.col-md-4.text-center
+					.item
+						figure
+							img.img-fluid(src="/img/proct_2.png", alt="")
 						figcaption
-							h3 
-								a(href="#") Chúng tôi là FullStack Vietnam
-							time 22/06/2018
-							p Lorem ipsum dolor, sit amet consectetur adipisicing elit. Deleniti incidunt ex, autem dignissimos illum aperiam pariatur in explicabo corporis delectus totam! 
-				.col-md-4.item
-					figure
-						.blockimg
-							img(src="./img/home_news_3.jpg", alt="", srcset="")
+							h3 SEIKO SMZGO7K1
+							span Luxury
+				.col-md-4.text-center
+					.item
+						figure
+							img.img-fluid(src="/img/proct_3.png", alt="")
 						figcaption
-							h3 
-								a(href="#") Chúng tôi là FullStack Vietnam
-							time 22/06/2018
-							p Lorem ipsum dolor, sit amet consectetur adipisicing elit. Deleniti incidunt ex, autem dignissimos illum aperiam pariatur in explicabo corporis delectus totam! 
-	section.home-clients.mt-5
+							h3 ROAMER RM 220837
+							span Luxury
+	section.logotdk
+		.container
+			.owl-carousel.owl-theme
+				.item
+					img(src="./img/trademark_1.png", alt="")
+				.item
+					img(src="./img/trademark_2.png", alt="")
+				.item
+					img(src="./img/trademark_3.png", alt="")
+				.item
+					img(src="./img/trademark_4.png", alt="")
+				.item
+					img(src="./img/trademark_1.png", alt="")
+				.item
+					img(src="./img/trademark_2.png", alt="")
+				.item
+					img(src="./img/trademark_3.png", alt="")
+				.item
+					img(src="./img/trademark_4.png", alt="")
+	section.comment
 		.container
 			.row
-				.col
-					.owl-carousel.owl-theme
-						- for(x=1;x<10;x++)
-							.item
-								if (x < 7)
-									img(src="./img/clients_"+x+".png", alt="")
-								else
-									img(src="./img/clients_"+(x-3)+".png", alt="")
+				.col.text-center
+					.title
+						h2 WHAT CUSTOMERS ARE SAYING
+			.row.no-gutters
+				.owl-carousel.owl-theme
+					.col
+						.box
+							.row
+								.col-md-5
+									figure
+										img.img-fluid(src="./img/cmt_1.png", alt="")
+								.col-md-7
+									figcaption
+										h4 AMANDA SMITH
+										p 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. In ipsam blanditiis, nihil voluptatum officiis, quisquam
+					.col
+						.box
+							.row
+								.col-md-5
+									figure
+										img.img-fluid(src="./img/cmt_2.png", alt="")
+								.col-md-7
+									figcaption
+										h4 SANDRA WILLIMS
+										p 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. In ipsam blanditiis, nihil voluptatum officiis, quisquam
+					.col
+						.box
+							.row
+								.col-md-5
+									figure
+										img.img-fluid(src="./img/cmt_1.png", alt="")
+								.col-md-7
+									figcaption
+										h4 AMANDA SMITH
+										p 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. In ipsam blanditiis, nihil voluptatum officiis, quisquam
+					.col
+						.box
+							.row
+								.col-md-5
+									figure
+										img.img-fluid(src="./img/cmt_2.png", alt="")
+								.col-md-7
+									figcaption
+										h4 SANDRA WILLIMS
+										p 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. In ipsam blanditiis, nihil voluptatum officiis, quisquam
