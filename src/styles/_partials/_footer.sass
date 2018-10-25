@@ -1,3 +1,88 @@
-footer
-	img 
-		max-width: 200px
+.canhcam-footer-2
+	background-color: #0e0e0e
+	position: relative
+	z-index: 1
+	color: #fff
+	overflow: hidden
+	+media-breakpoint-down(xs)
+		text-align: center
+	h3
+		+fz(1rem)
+	h4
+		text-transform: uppercase
+		color: #fff
+		position: relative
+		+fz(1.3rem)
+		margin-bottom: 1.5rem
+		p
+			+pad(1rem null null)
+			+fz(.8rem)
+			color: #5e5d5d 
+	.linkfooter
+		padding: 3rem 0 2rem
+		.list-group
+			.list-group-item
+				display: inline-block
+				background: #0e0e0e
+				border: 0
+				+pad(.5rem 0)
+				+media-breakpoint-up(md)
+					+pad(1rem 0)
+				a
+					font-size: .9rem
+					color: #5e5d5d
+					+fw(bold)
+					
+		.subscribe
+			input
+				color: #fff
+				background: #0e0e0e
+				border-radius: 0
+				&:focus
+					border-color: white
+					outline: none
+					box-shadow: none
+			button
+				background: #b6907e
+				color: #705142
+				border: none
+				border-radius: 0
+				&:focus
+					border-color: white
+					outline: none
+					box-shadow: none
+				p
+					margin-bottom: 0
+		.socials
+
+			.social-list
+				+media-breakpoint-down(sm)
+					+mar(2rem null null null)
+				.list-inline
+					+mar(0)
+					.list-inline-item
+						+fz(.9rem)
+						+mar(null 1rem null null)
+						a
+							display: block
+							height: 2rem
+							width: 2rem
+							+lh(2rem)
+							+border-radius(50%)
+							text-align: center
+							i
+								+lh(2rem)
+						&:last-child
+							+mar(0)
+		.text
+			+mar(2rem null 1rem)
+			h5
+				+fz(1rem)
+				color: #5e5d5d
+			i
+				color: #5e5d5d
+				+mar(null .5rem)
+				&:hover
+					transform: scale(1.5)
+					color: $duong
+					transition: .5s all ease-in-out
