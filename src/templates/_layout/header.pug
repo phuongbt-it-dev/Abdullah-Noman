@@ -1,9 +1,9 @@
 <!-- ////////////// HEADER ////////////// -->
-header.bg-light
+header
 	.container
 		nav.navbar.navbar-expand-lg.navbar-light
 			a.navbar-brand(href="#") 
-				img(src="./img/logo.png", alt="Logo")
+				img(src="./img/logo_min.png", alt="Logo")
 			//- Đây là nút sẽ hiển thị trong mobile
 			button.navbar-toggler(type="button" data-toggle="collapse" data-target="#fullStackMenu" aria-controls="fullStackMenu" aria-expanded="false" aria-label="Toggle navigation")
 				span.fa.fa-bars
@@ -11,18 +11,20 @@ header.bg-light
 				//- Thuộc tính '.mr-auto' này sẽ đẩy me nu về bên phải 
 				.mr-auto
 				ul.navbar-nav
-					li.nav-item.active
-						a.nav-link(href="index.html")
-							| Trang chủ
-					li.nav-item.dropdown
-						a#dropdownFS.nav-link.dropdown-toggle(href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false") Gian hàng
-						.dropdown-menu(aria-labelledby="dropdownFS")
-							a.dropdown-item(href="#") Nam
-							a.dropdown-item(href="#") Nữ
 					li.nav-item
-						a.nav-link(href="services.html") Dịch vụ
+						a.nav-link(href="#") watches
 					li.nav-item
-						a.nav-link(href="about.html") Về chúng tôi
+						a.nav-link(href="#") services
 					li.nav-item
-						a.nav-link(href="contact.html") Liên hệ
+						a.nav-link(href="#") faqs
+					li.nav-item
+						a.nav-link(href="#") contact
+					li.nav-item
+						a.nav-link(href="#") request virtual
+				ul.tel.list-unstyled
+					li.item-icons
+						a.item-link(href="#") 
+							i.fa.fa-phone
+					li.item-tel
+						a.item-link(href="#") +84 964 553 765
 <!-- ////////////// HEADER ////////////// -->

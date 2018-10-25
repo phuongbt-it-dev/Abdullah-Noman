@@ -11,8 +11,12 @@ html(dir='ltr', lang=config.SEO.seo_lang, itemscope, itemtype="http://schema.org
 		meta(name='theme-color', content=config.SEO.mobile_color)
 		meta(name='msapplication-navbutton-color', content=config.SEO.mobile_color)
 		meta(name='apple-mobile-web-app-status-bar-style', content=config.SEO.mobile_color)
+		//- FONT --------------------------------------------
 		title #{title || AppName} - by FullStack Vietnam
 		link(href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900&amp;subset=vietnamese" rel="stylesheet")
+		<link href="https://fonts.googleapis.com/css?family=PT+Sans" rel="stylesheet">
+		<link rel="stylesheet" media="screen" href="https://fontlibrary.org/face/bebusneuebold" type="text/css"/>
+		//-------------------------------------------------------
 		include ../_include/_seo
 		<!-- ////////////// CSS Include ////////////// -->
 		include ../_include/_css
@@ -37,7 +41,7 @@ html(dir='ltr', lang=config.SEO.seo_lang, itemscope, itemtype="http://schema.org
 			block body
 		<!-- ////////////// End Main ////////////// -->
 		<!-- ////////////// Footer ////////////// -->
-		include footer
+		//- include footer
 		<!-- ////////////// End Footer ////////////// -->
 		<!-- ////////////// Javascript Include ////////////// -->
 		include ../_include/_script

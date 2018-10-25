@@ -1,67 +1,161 @@
-/////////////////////////////////
-// Phần Slider
-/////////////////////////////////
-.home-slider
+body
+	background: $blacks
+	font-family: 'BebasNeueBold'
+	font-weight: normal
+	font-style: normal
+// Phần Slider-1
+	
+.slider-1
+	position: relative
 	.owl-carousel
-		// Phần Slider
 		.item
-			position: relative
 			.title
-				+pad(2rem 0)
-				height: 100%
-				width: 100%
-				display: flex
-				align-items: center
-			+media-breakpoint-up(md)
-				.title
-					+pos(abs, 0 null null 0)
+				// +pos(abs, 50% 0 0 0)
+				// transform: translateY(-50%)
+				h1, .choose-1, .choose-2
+					text-transform: uppercase
+				h1
 					color: $whites
-					+text-shadow()
+					+fz(1.8rem)
+					text-align: center
+					+mar(0)
+					// +mar(1rem 0 0 0)
+					// +pos(abs, -220px 0 0 7%)
+					// width: 62%
+				.choose
+					display: inline-flex
+					justify-content: center
+					width: 100%
+					+mar(1rem)
+					.choose-1, .choose-2
+						+pad(.5rem)
+						+fz(.8rem)
+						box-shadow: 0 0 0 1px #957364 inset
+						transition: .5s all ease-in-out
+					.choose-1
+						+mar(0 1rem 0 0)
+					.choose-link
+						text-decoration: none
+						color: #957364
+	+media-breakpoint-up(sm)
+		.owl-carousel
+			.item
+				position: relative
+				.title
+					+pos(abs, 30% 0 0 0)
+					tranform: translateY(-50%)
+					h1
+						text-align: left
+						display: inline-block
+						+fz(2.5rem)
+						+lh(3.5rem)
+						+mar(0 0 2rem 0)
+					.choose
+						display: inline-flex
+						justify-content: flex-start
+						+mar(1rem 0 0 0)
+	+media-breakpoint-up(md)
+		.owl-carousel
+			.item
+				.title
+					+pos(abs, 20% 0 0 0)
+					h1
+						+fz(3rem)
+						+lh(4rem)
+					.choose
+						.choose-1
+							+pad(1rem)
+							&:hover
+								background: #ffbd46
+								box-shadow: 0 0 0 1px #957364 inset
+								transition: .5s all ease-in-out
+								.choose-link
+									color: #651f01
+						.choose-2
+							+pad(1rem)
+							&:hover
+								background: #ffbd46
+								box-shadow: 0 0 0 1px #957364 inset
+								transition: .5s all ease-in-out
+								.choose-link
+									color: #651f01
+	
+	//- Phần Stories
+// overflow: hidden
+// text-overflow: ellipsis
+// display: -webkit-box
+// -webkit-line-clamp: 3
+// -webkit-box-orient: vertical
+.stories
+	position: relative
+	.owl-carousel
+		.item
+			.title
+				+pos(abs, 40% 0 0 0)
+				transform: translateY(-50%)
+				text-align: right
+				h2, p
+					color: $whites
+				p
+					+fz(.8rem)
+					font-family: 'PT Sans', sans-serif
+					overflow: hidden
+					text-overflow: ellipsis
+					display: -webkit-box
+					-webkit-line-clamp: 5
+					-webkit-box-orient: vertical
+		.owl-nav
+			color: $whites
+			text-align: center
+			&:focus
+				border: none
+			.owl-prev
+				+mar(0 .5rem 0 0)
+			.owl-next
+				+mar(0 0 0 .5rem)
+	+media-breakpoint-up(sm)
+		.owl-carousel
+			.item
+				.title
+					+pos(abs, 40% 0 0 0)
 					h2
 						+fz(3rem)
-					p 
-						+fz(1.5rem)
-						+lh(2rem)
-		// Phần Control
-		.owl-dots
-			margin-bottom: 2rem
-/////////////////////////////////
-// Phần News
-/////////////////////////////////
-
-.home-news
-	.item 
-		figure
-			.blockimg
-				+bor-rad(10px)
-				overflow: hidden
-				img
-					width: 100%
-			figcaption 
-				margin-top: 1rem
-				h3 
-					+fz(1.1rem)
-					margin-bottom: 0
-				time 
-					+fz(.85rem)
-					color: darken($whites,30%)
-				p 
-					margin-top: .5rem
-					color: darken($whites,50%)
-/////////////////////////////////
-// Phần News
-/////////////////////////////////
-
-.home-clients
-	.owl-carousel
-		.item 
-			+pad(.5rem)
-		// Phần Control
-		.owl-nav
-			margin-bottom: 2rem
-			button 
-				i 
-					display: block
-					width: 2rem
-					height: 2rem
-					+lh(2rem)
+						text-transform: uppercase
+					p
+						+fz(1.1rem)
+						+lh(1.7rem)
+						overflow: hidden
+						text-overflow: ellipsis
+						display: -webkit-box
+						-webkit-line-clamp: 7
+						-webkit-box-orient: vertical
+			.owl-nav
+				+pos(abs, 85% 15% null null)
+				.owl-prev, .owl-next
+					+fz(1.5rem)
+	+media-breakpoint-up(md)
+		.owl-carousel
+			.item
+				.title
+					+pos(abs, 45% 0 0 0)
+					p
+						+fz(1.1rem)
+						overflow: hidden
+						text-overflow: ellipsis
+						display: -webkit-box
+						-webkit-line-clamp: 6
+						-webkit-box-orient: vertical
+			.owl-nav
+				+pos(abs, 80% 8% null null)
+	+media-breakpoint-up(lg)
+		.owl-carousel
+			.item
+				.title
+					+pos(abs, 50% 0 0 0)
+					p
+						+fz(1.1rem)
+						overflow: hidden
+						text-overflow: ellipsis
+						display: -webkit-box
+						-webkit-line-clamp: 10
+						-webkit-box-orient: vertical

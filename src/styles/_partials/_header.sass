@@ -1,10 +1,83 @@
 header
+	a
+		text-decoration: none
+	background: $blacks
 	.navbar
 		+pad(null 0)
 	.navbar-brand
 		img 
-			max-height: 2rem
+			max-height: 2.5rem
+			transition: .5s all ease-in-out
+	.navbar-toggler
+		span
+			color: #957364
+	.navbar-nav
+		+mar(0 8rem 0 0)
+		.nav-item
+			// +mar(0 0 0 2rem)
+			.nav-link
+				color: #ffffff
+				text-transform: uppercase
+				+fz(.9rem)
+				&:before
+						content: ''
+						width: 70%
+						height: 1px
+						background: #957364
+						+pos(abs, null null 0 50%)
+						transform: translateX(-50%)
+						z-index: 3334
+						display: block
+						opacity: 0
+						transition: .5s all ease-in-out
+				&:focus
+					color: #957364
+					&:before
+						opacity: 1
+				&:hover
+					color: $whites
+	.tel
+		display: flex
+		align-items: center
+		+mar(0)
+		.item-icons
+			.item-link
+				i
+					color: #957364
+					+mar(0 1rem 0 0)
+		.item-tel
+			.item-link
+				text-decoration: none
+				color: $whites
 	+media-breakpoint-up(md)
 		.navbar-brand
 			img 
 				max-height: 3rem
+				transition: .5s all ease-in-out
+		.navbar-nav
+			.nav-item
+				// +mar(0 0 0 2rem)
+	+media-breakpoint-up(lg)
+		.navbar-nav
+			.nav-item
+				+mar(0 0 0 2rem)
+				.nav-link
+					position: relative
+					transition: .5s all ease-in-out
+					&:before
+						content: ''
+						width: 70%
+						height: 1px
+						background: #957364
+						+pos(abs, null null 0 50%)
+						transform: translateX(-50%)
+						z-index: 3333
+						display: block
+						opacity: 0
+						transition: .5s all ease-in-out
+					&:hover
+						color: #957364
+						transition: .5s all ease-in-out
+						&:before
+							opacity: 1
+							transition: .5s all ease-in-out
