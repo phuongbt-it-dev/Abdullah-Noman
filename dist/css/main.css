@@ -6451,10 +6451,10 @@ header .navbar-brand img {
       .product .link {
         padding-top: 5rem; }
         .product .link a {
-          font-size: 1.5rem;
-          border-bottom: 1px solid #b6907e; }
+          font-size: 1.5rem; }
           .product .link a:hover {
-            background: #b6907e;
+            border-bottom: 1px solid #b6907e;
+            color: #b6907e;
             transition: .5s all ease-in-out; } }
   .product .item {
     border: 1.2px solid #ffffff29;
