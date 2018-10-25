@@ -6342,6 +6342,8 @@ header .navbar-brand img {
   @media (max-width: 575.98px) {
     .canhcam-footer-2 {
       text-align: center; } }
+  .canhcam-footer-2 h3 {
+    font-size: 1rem; }
   .canhcam-footer-2 h4 {
     text-transform: uppercase;
     color: #fff;
