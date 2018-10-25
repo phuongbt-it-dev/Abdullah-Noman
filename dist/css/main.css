@@ -6346,7 +6346,7 @@ header .navbar-brand img {
     text-transform: uppercase;
     color: #fff;
     position: relative;
-    font-size: 1rem;
+    font-size: 1.3rem;
     margin-bottom: 1.5rem; }
     .canhcam-footer-2 h4 p {
       padding-top: 1rem;
@@ -6374,7 +6374,8 @@ header .navbar-brand img {
         font-weight: bold; }
     .canhcam-footer-2 .linkfooter .subscribe input {
       color: #fff;
-      background: #0e0e0e; }
+      background: #0e0e0e;
+      border-radius: 0; }
       .canhcam-footer-2 .linkfooter .subscribe input:focus {
         border-color: white;
         outline: none;
@@ -6382,7 +6383,8 @@ header .navbar-brand img {
     .canhcam-footer-2 .linkfooter .subscribe button {
       background: #b6907e;
       color: #705142;
-      border: none; }
+      border: none;
+      border-radius: 0; }
       .canhcam-footer-2 .linkfooter .subscribe button:focus {
         border-color: white;
         outline: none;
@@ -6447,7 +6449,8 @@ header .navbar-brand img {
       .product .link {
         padding-top: 5rem; }
         .product .link a {
-          font-size: 1.5rem; }
+          font-size: 1.5rem;
+          border-bottom: 1px solid #b6907e; }
           .product .link a:hover {
             background: #b6907e;
             transition: .5s all ease-in-out; } }
