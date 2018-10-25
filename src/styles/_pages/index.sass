@@ -22,6 +22,9 @@
 			+pad(5rem null null)
 			a
 				+fz(1.5rem)
+				&:hover
+					background: #b6907e
+					transition: .5s all ease-in-out
 
 	.item
 		border: 1.2px solid #ffffff29
@@ -48,11 +51,25 @@
 		+pad(3rem null 4rem)
 		h2
 			color: #fff
+			+fz(2rem)
 	.owl-carousel
+		figure
+			img
+				border-radius: 50%
 		figcaption
 			h4
 				color: #fff
 				+pad(1rem null)
+				+fz(1.5rem)
 			p
 				color: #767676
 				line-height: 2.5rem
+		.owl-dots
+			button
+				color: #b6907e
+	+media-breakpoint-up(md)
+		.owl-carousel
+			.owl-dots
+				+pad(1rem null 3rem)
+		.title
+			+pad(4rem null 5rem)

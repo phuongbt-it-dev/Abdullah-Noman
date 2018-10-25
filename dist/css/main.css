@@ -6333,8 +6333,91 @@ header .navbar-brand img {
   header .navbar-brand img {
     max-height: 3rem; } }
 
-footer img {
-  max-width: 200px; }
+.canhcam-footer-2 {
+  background-color: #0e0e0e;
+  position: relative;
+  z-index: 1;
+  color: #fff;
+  overflow: hidden; }
+  @media (max-width: 575.98px) {
+    .canhcam-footer-2 {
+      text-align: center; } }
+  .canhcam-footer-2 h4 {
+    text-transform: uppercase;
+    color: #fff;
+    position: relative;
+    font-size: 1rem;
+    margin-bottom: 1.5rem; }
+    .canhcam-footer-2 h4 p {
+      padding-top: 1rem;
+      font-size: 0.8rem;
+      color: #5e5d5d; }
+  .canhcam-footer-2 .linkfooter {
+    padding: 3rem 0 2rem; }
+    .canhcam-footer-2 .linkfooter .list-group .list-group-item {
+      display: inline-block;
+      background: #0e0e0e;
+      border: 0;
+      padding-top: 0.5rem;
+      padding-right: 0;
+      padding-bottom: 0.5rem;
+      padding-left: 0; }
+      @media (min-width: 768px) {
+        .canhcam-footer-2 .linkfooter .list-group .list-group-item {
+          padding-top: 1rem;
+          padding-right: 0;
+          padding-bottom: 1rem;
+          padding-left: 0; } }
+      .canhcam-footer-2 .linkfooter .list-group .list-group-item a {
+        font-size: .9rem;
+        color: #5e5d5d;
+        font-weight: bold; }
+    .canhcam-footer-2 .linkfooter .subscribe input {
+      color: #fff;
+      background: #0e0e0e; }
+      .canhcam-footer-2 .linkfooter .subscribe input:focus {
+        border-color: white;
+        outline: none;
+        box-shadow: none; }
+    .canhcam-footer-2 .linkfooter .subscribe button {
+      background: #b6907e;
+      color: #705142;
+      border: none; }
+      .canhcam-footer-2 .linkfooter .subscribe button:focus {
+        border-color: white;
+        outline: none;
+        box-shadow: none; }
+      .canhcam-footer-2 .linkfooter .subscribe button p {
+        margin-bottom: 0; }
+    @media (max-width: 767.98px) {
+      .canhcam-footer-2 .linkfooter .socials .social-list {
+        margin-top: 2rem; } }
+    .canhcam-footer-2 .linkfooter .socials .social-list .list-inline {
+      margin: 0; }
+      .canhcam-footer-2 .linkfooter .socials .social-list .list-inline .list-inline-item {
+        font-size: 0.9rem;
+        margin-right: 1rem; }
+        .canhcam-footer-2 .linkfooter .socials .social-list .list-inline .list-inline-item a {
+          display: block;
+          height: 2rem;
+          width: 2rem;
+          line-height: 2rem;
+          border-radius: 50%;
+          text-align: center; }
+          .canhcam-footer-2 .linkfooter .socials .social-list .list-inline .list-inline-item a i {
+            line-height: 2rem; }
+        .canhcam-footer-2 .linkfooter .socials .social-list .list-inline .list-inline-item:last-child {
+          margin: 0; }
+    .canhcam-footer-2 .linkfooter .text {
+      margin-top: 2rem;
+      margin-bottom: 1rem; }
+      .canhcam-footer-2 .linkfooter .text h5 {
+        font-size: 1rem;
+        color: #5e5d5d; }
+      .canhcam-footer-2 .linkfooter .text i {
+        color: #5e5d5d;
+        margin-right: 0.5rem;
+        margin-left: 0.5rem; }
 
 .product {
   background: #000; }
@@ -6364,7 +6447,10 @@ footer img {
       .product .link {
         padding-top: 5rem; }
         .product .link a {
-          font-size: 1.5rem; } }
+          font-size: 1.5rem; }
+          .product .link a:hover {
+            background: #b6907e;
+            transition: .5s all ease-in-out; } }
   .product .item {
     border: 1.2px solid #ffffff29;
     padding-bottom: 3rem;
@@ -6392,13 +6478,26 @@ footer img {
     padding-top: 3rem;
     padding-bottom: 4rem; }
     .comment .title h2 {
-      color: #fff; }
+      color: #fff;
+      font-size: 2rem; }
+  .comment .owl-carousel figure img {
+    border-radius: 50%; }
   .comment .owl-carousel figcaption h4 {
     color: #fff;
     padding-top: 1rem;
-    padding-bottom: 1rem; }
+    padding-bottom: 1rem;
+    font-size: 1.5rem; }
   .comment .owl-carousel figcaption p {
     color: #767676;
     line-height: 2.5rem; }
+  .comment .owl-carousel .owl-dots button {
+    color: #b6907e; }
+  @media (min-width: 768px) {
+    .comment .owl-carousel .owl-dots {
+      padding-top: 1rem;
+      padding-bottom: 3rem; }
+    .comment .title {
+      padding-top: 4rem;
+      padding-bottom: 5rem; } }
 
 /*# sourceMappingURL=main.css.map */
