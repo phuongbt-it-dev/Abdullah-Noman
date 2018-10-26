@@ -6567,13 +6567,13 @@ body {
         line-height: 4rem; }
       .slider-1 .owl-carousel .item .title .choose .choose-1 {
         padding: 1rem; }
-      .slider-1 .owl-carousel .item .title .choose .choose-link {
-        font-size: 1.1rem; }
-        .slider-1 .owl-carousel .item .title .choose .choose-link:hover {
+        .slider-1 .owl-carousel .item .title .choose .choose-1:hover {
           background: #ffbd46;
           transition: .5s all ease-in-out; }
-          .slider-1 .owl-carousel .item .title .choose .choose-link:hover .choose-link {
+          .slider-1 .owl-carousel .item .title .choose .choose-1:hover .choose-link {
             color: #651f01; }
+      .slider-1 .owl-carousel .item .title .choose .choose-link {
+        font-size: 1.1rem; }
       .slider-1 .owl-carousel .item .title .choose .choose-2 {
         padding: 1rem; }
         .slider-1 .owl-carousel .item .title .choose .choose-2:hover {
