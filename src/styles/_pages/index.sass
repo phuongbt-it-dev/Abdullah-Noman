@@ -1,67 +1,76 @@
-/////////////////////////////////
-// Phần Slider
-/////////////////////////////////
-.home-slider
-	.owl-carousel
-		// Phần Slider
-		.item
-			position: relative
-			.title
-				+pad(2rem 0)
-				height: 100%
-				width: 100%
-				display: flex
-				align-items: center
+//-section comment
+.product
+	background: #000
+	.title
+		+pad(4.5rem null null)
+		h2
+			+fz(1.5rem)
+			color: #fff
 			+media-breakpoint-up(md)
-				.title
-					+pos(abs, 0 null null 0)
-					color: $whites
-					+text-shadow()
-					h2
-						+fz(3rem)
-					p 
-						+fz(1.5rem)
-						+lh(2rem)
-		// Phần Control
-		.owl-dots
-			margin-bottom: 2rem
-/////////////////////////////////
-// Phần News
-/////////////////////////////////
+				+fz(2.5rem)
+		a
+			text-decoration: none
+			+mar(2.5rem 2rem 2rem)
+	.link
+		+pad(4.5rem null null)
+		a
+			+fz(1rem)
+			color: #fff
+			text-decoration: none
+			+mar(2.5rem 2rem 2rem)
+		+media-breakpoint-up(md)
+			+pad(5rem null null)
+			a
+				+fz(1.5rem)
+				&:hover
+					border-bottom: 1px solid #b6907e
+					color: #b6907e
+					transition: .5s all ease-in-out
 
-.home-news
-	.item 
-		figure
-			.blockimg
-				+bor-rad(10px)
-				overflow: hidden
-				img
-					width: 100%
-			figcaption 
-				margin-top: 1rem
-				h3 
-					+fz(1.1rem)
-					margin-bottom: 0
-				time 
-					+fz(.85rem)
-					color: darken($whites,30%)
-				p 
-					margin-top: .5rem
-					color: darken($whites,50%)
-/////////////////////////////////
-// Phần News
-/////////////////////////////////
-
-.home-clients
+	.item
+		border: 1.2px solid #ffffff29
+		+pad(null null 3rem)
+		+mar(null null 2rem)
+		h3
+			color: #fff
+			+fz(1.3rem)
+		span
+			color: #b6907e
+.logotdk
+	background: #0e0e0e
 	.owl-carousel
-		.item 
-			+pad(.5rem)
-		// Phần Control
+		+pad(1rem null)
 		.owl-nav
-			margin-bottom: 2rem
-			button 
-				i 
-					display: block
-					width: 2rem
-					height: 2rem
-					+lh(2rem)
+			button
+				width: 2rem
+				height: 2rem
+				background: #fff
+				+fz(1rem)
+.comment
+	background: #000
+	.title
+		+pad(3rem null 4rem)
+		h2
+			color: #fff
+			+fz(2rem)
+	.owl-carousel
+		figure
+			img
+				border-radius: 50%
+		figcaption
+			h4
+				color: #fff
+				+pad(1rem null)
+				+fz(1.5rem)
+			p
+				color: #767676
+				line-height: 2.5rem
+		.owl-dots
+			button
+				color: #b6907e
+	+media-breakpoint-up(md)
+		.owl-carousel
+			.owl-dots
+				+pad(1rem null 3rem)
+		.title
+			+pad(4rem null 5rem)
