@@ -2,7 +2,7 @@
 header
 	.container
 		nav.navbar.navbar-expand-lg.navbar-light
-			a.navbar-brand(href="#") 
+			a.navbar-brand(href="#home", data-link="#home") 
 				img(src="./img/logo_min.png", alt="Logo")
 			//- Đây là nút sẽ hiển thị trong mobile
 			button.navbar-toggler(type="button" data-toggle="collapse" data-target="#fullStackMenu" aria-controls="fullStackMenu" aria-expanded="false" aria-label="Toggle navigation")
@@ -12,15 +12,15 @@ header
 				.mr-auto
 				ul.navbar-nav
 					li.nav-item
-						a.nav-link(href="#") watches
+						a.nav-link(href="#watch", data-link="#watch") watches
 					li.nav-item
-						a.nav-link(href="#") services
+						a.nav-link(href="#service", data-link="#service") services
 					li.nav-item
-						a.nav-link(href="#") faqs
+						a.nav-link(href="#faq", data-link="#faq") faqs
 					li.nav-item
-						a.nav-link(href="#") contact
+						a.nav-link(href="#contact", data-link="#contact") contact
 					li.nav-item
-						a.nav-link(href="#") request virtual
+						a.nav-link(href="#request", data-link="#request") request virtual
 				ul.tel.list-unstyled
 					li.item-icons
 						a.item-link(href="#") 

@@ -33,6 +33,31 @@ $(function () {
 });
 // Main
 $(document).ready(function () {
+	$(".nav-link").on('click', function (event) {
+		if (this.hash !== "") {
+			event.preventDefault();
+			var hash = this.hash;
+			$('html, body').animate({
+				scrollTop: $(hash).offset().top
+			}, 1000, function () {
+				window.location.hash = hash;
+			});
+		}
+		$('.navbar-collapse').removeClass('show');
+	});
+	$(".navbar-brand").on('click', function (event) {
+		if (this.hash !== "") {
+			event.preventDefault();
+			var hash = this.hash;
+			$('html, body').animate({
+				scrollTop: $(hash).offset().top
+			}, 1000, function () {
+				window.location.hash = hash;
+			});
+		}
+		$('.navbar-collapse').removeClass('show');
+	});
+
 	// Phần Slider-1
 	$('.slider-1 .owl-carousel').owlCarousel({
 		items: 1,
