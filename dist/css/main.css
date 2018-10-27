@@ -6512,6 +6512,8 @@ body {
 
 .slider-1 {
   position: relative; }
+  .slider-1 .owl-carousel .item .blockimg figure {
+    margin: 0; }
   .slider-1 .owl-carousel .item .title h1, .slider-1 .owl-carousel .item .title .choose-1, .slider-1 .owl-carousel .item .title .choose-2 {
     text-transform: uppercase; }
   .slider-1 .owl-carousel .item .title h1 {
@@ -6592,6 +6594,8 @@ body {
 
 .stories {
   position: relative; }
+  .stories .owl-carousel .item .blockimg figure {
+    margin: 0; }
   .stories .owl-carousel .item .title {
     position: absolute;
     top: 40%;
