@@ -84,3 +84,41 @@ $(document).keydown(function(e){
 
 AOS.init();
 
+
+$(document).keydown(function(event) {
+	if (event.keyCode == 123) { // Prevent F12
+		return false;
+	} else if (event.ctrlKey && event.shiftKey && event.keyCode == 73) { // Prevent Ctrl+Shift+I        
+		return false;
+	}
+})
+$(document).bind('keydown', 'f12', function(e) {
+	e.preventDefault();
+	return false;
+});
+document.onkeydown = function(e) {
+	e = e || window.event; //Get event
+	if (e.ctrlKey) {
+		var c = e.which || e.keyCode; //Get key code
+		switch (c) {
+			case 83: //Block Ctrl+S
+				e.preventDefault();
+				e.stopPropagation();
+				break;
+			default:
+				e.preventDefault();
+				e.stopPropagation();
+		}
+	}
+};
+$(document).ready(function() {
+	$('body').bind('cut copy', function(e) {
+		e.preventDefault();
+	});
+});
+$(document).ready(function() {
+	$("body").on("contextmenu", function(e) {
+		return false;
+	});
+});
+
